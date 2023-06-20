@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('Testing') {
+    stage('check dir') {
       steps {
         sh 'ls -la'
       }

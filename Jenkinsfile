@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Check gcloud sdk') {
+      steps {
+        sh 'gcloud init'
+      }
+    }
+
   }
 }

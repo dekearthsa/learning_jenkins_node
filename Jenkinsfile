@@ -15,7 +15,7 @@ pipeline {
 
     stage('Check gcloud sdk') {
       steps {
-        sh './google-cloud-sdk/bin/gcloud --version'
+        sh '/google-cloud-sdk/bin/gcloud --version'
       }
     }
 

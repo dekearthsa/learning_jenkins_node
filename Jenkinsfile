@@ -21,7 +21,8 @@ pipeline {
 
     stage('Build container regsiter') {
       steps {
-        sh '/google-cloud-sdk/bin/gcloud builds submit --tag asia.gcr.io/scg-iat-project-coretech/learning_jenkins_node'
+        sh '''/google-cloud-sdk/bin/gcloud config set project scg-iat-project-coretech
+/google-cloud-sdk/bin/gcloud builds submit --tag asia.gcr.io/scg-iat-project-coretech/learning_jenkins_node'''
       }
     }
 

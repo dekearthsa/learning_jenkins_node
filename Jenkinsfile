@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Build container regsiter') {
+      steps {
+        sh 'gcloud builds submit --tag asia.gcr.io/scg-iat-project-coretech/learning_jenkins_node'
+      }
+    }
+
   }
 }

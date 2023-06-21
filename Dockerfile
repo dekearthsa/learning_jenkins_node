@@ -12,6 +12,6 @@ RUN npm install && npm cache clean --force
 
 COPY . .
 
-EXPOSE 5500
+# EXPOSE 5500
 
 CMD ["node", "./dist/index.js"]

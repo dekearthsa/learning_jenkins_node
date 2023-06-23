@@ -30,12 +30,7 @@ pipeline {
 
     stage('Deploy to cloud run') {
       steps {
-        sh '''/google-cloud-sdk/bin/gcloud run deploy test-jenkins-node \\ 
---image asia.gcr.io/scg-iat-project-coretech/learning_jenkins_node:latest \\
---platform managed \\
---allow-unauthenticated \\
---port 5500 \\
---region asia-southeast1'''
+        sh '/google-cloud-sdk/bin/gcloud run deploy test-jenkins-node --image=asia.gcr.io/scg-iat-project-coretech/learning_jenkins_node:latest --platform=managed --allow-unauthenticated --port=5500 --region=asia-southeast1'
       }
     }
 
